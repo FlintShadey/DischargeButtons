@@ -3,8 +3,12 @@
     <button @click="copyAdult" class="copy-button adult-button">Adult</button>
     <button @click="copyMom" class="copy-button mom-button">Mom</button>
     <button @click="copyDad" class="copy-button dad-button">Dad</button>
-    <button @click="copyParents" class="copy-button parents-button">Parents</button>
-    <button @click="copyGuardian" class="copy-button guardian-button">Guardian</button>
+    <button @click="copyParents" class="copy-button parents-button">
+      Parents
+    </button>
+    <button @click="copyGuardian" class="copy-button guardian-button">
+      Guardian
+    </button>
   </div>
 </template>
 
@@ -12,50 +16,70 @@
 export default {
   data() {
     return {
-      adultText: 'The patient is given and understands strict follow up and return instruction, patient agrees and wishes to be discharged.',
-      momText: 'The mom is given and understands strict follow up and return instruction, mom agrees and wishes to be discharged.',
-      dadText: 'The dad is given and understands strict follow up and return instruction, dad agrees and wishes to be discharged.',
-      parentsText: 'The parents are given and understand strict follow up and return instruction, the parents agree and wish to be discharged.',
-      guardianText: 'The guardian is given and understands strict follow up and return instruction, guardian agrees and wishes to be discharged.'
+      adultText:
+        "The patient is given and understands strict follow up and return instruction, patient agrees and wishes to be discharged.",
+      momText:
+        "The mom is given and understands strict follow up and return instruction, mom agrees and wishes to be discharged.",
+      dadText:
+        "The dad is given and understands strict follow up and return instruction, dad agrees and wishes to be discharged.",
+      parentsText:
+        "The parents are given and understand strict follow up and return instruction, the parents agree and wish to be discharged.",
+      guardianText:
+        "The guardian is given and understands strict follow up and return instruction, guardian agrees and wishes to be discharged.",
     };
   },
   methods: {
     copyAdult() {
-      navigator.clipboard.writeText(this.adultText).then(() => {
-        console.log('Text copied to clipboard');
-      }).catch(err => {
-        console.error('Could not copy text: ', err);
-      });
+      navigator.clipboard
+        .writeText(this.adultText)
+        .then(() => {
+          console.log("Text copied to clipboard");
+        })
+        .catch((err) => {
+          console.error("Could not copy text: ", err);
+        });
     },
     copyMom() {
-      navigator.clipboard.writeText(this.momText).then(() => {
-        console.log('Text copied to clipboard');
-      }).catch(err => {
-        console.error('Could not copy text: ', err);
-      });
+      navigator.clipboard
+        .writeText(this.momText)
+        .then(() => {
+          console.log("Text copied to clipboard");
+        })
+        .catch((err) => {
+          console.error("Could not copy text: ", err);
+        });
     },
     copyDad() {
-      navigator.clipboard.writeText(this.dadText).then(() => {
-        console.log('Text copied to clipboard');
-      }).catch(err => {
-        console.error('Could not copy text: ', err);
-      });
+      navigator.clipboard
+        .writeText(this.dadText)
+        .then(() => {
+          console.log("Text copied to clipboard");
+        })
+        .catch((err) => {
+          console.error("Could not copy text: ", err);
+        });
     },
     copyParents() {
-      navigator.clipboard.writeText(this.parentsText).then(() => {
-        console.log('Text copied to clipboard');
-      }).catch(err => {
-        console.error('Could not copy text: ', err);
-      });
+      navigator.clipboard
+        .writeText(this.parentsText)
+        .then(() => {
+          console.log("Text copied to clipboard");
+        })
+        .catch((err) => {
+          console.error("Could not copy text: ", err);
+        });
     },
     copyGuardian() {
-      navigator.clipboard.writeText(this.guardianText).then(() => {
-        console.log('Text copied to clipboard');
-      }).catch(err => {
-        console.error('Could not copy text: ', err);
-      });
-    }
-  }
+      navigator.clipboard
+        .writeText(this.guardianText)
+        .then(() => {
+          console.log("Text copied to clipboard");
+        })
+        .catch((err) => {
+          console.error("Could not copy text: ", err);
+        });
+    },
+  },
 };
 </script>
 
@@ -71,7 +95,7 @@ export default {
 }
 
 .adult-button {
-  background-color: #FFD700; /* Golden yellow color */
+  background-color: #ffd700; /* Golden yellow color */
 }
 
 .adult-button:hover {
@@ -79,7 +103,7 @@ export default {
 }
 
 .mom-button {
-  background-color: #FF69B4; /* Pink color */
+  background-color: #ff69b4; /* Pink color */
 }
 
 .mom-button:hover {
@@ -87,7 +111,7 @@ export default {
 }
 
 .dad-button {
-  background-color: #1E90FF; /* Blue color */
+  background-color: #1e90ff; /* Blue color */
 }
 
 .dad-button:hover {
